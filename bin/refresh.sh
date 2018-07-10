@@ -19,6 +19,8 @@ cd shards
 for d in collections-*
 do
     cd $d
+    #TEMP ONLY hard code this in nexttree branch while working on ansible...
+    git checkout before_summer
     git pull origin --no-commit
     cd - >/dev/null 2>&1
 done
